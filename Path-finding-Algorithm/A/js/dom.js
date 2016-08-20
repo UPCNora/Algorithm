@@ -10,10 +10,8 @@
 			this.domLi = document.querySelectorAll('#mainbody ul li');
 			for(var i=0;i<this.domLi.length;i++){
 				this.domLi[i].position = [];
-				this.domLi[i].position.push(i + 1,parseInt(i / 14 + 1),(i % 14 + 1));
-				/* 
-					thi
-				 */
+				this.domLi[i].position.push(i,parseInt(i / 14),(i % 14));
+				this.domLi[i].innerHTML = "" +  this.domLi[i].position[0];
 			}
 		},
 
