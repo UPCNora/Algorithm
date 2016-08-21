@@ -176,13 +176,13 @@ var algorithm = {
 
 var handler = {
 		domX : document.querySelectorAll('#mainbody ul li'),
-		DomB = domX[0],
-	 	DomC = domX[139],
 		domD : [],
 		offset : 0,
 		btnArr : document.querySelectorAll('button'),
 
 		onhandler : function(){
+			this.DomB = this.domX[0];
+			this.DomC = this.domX[139];
 			var that = this;
 			var handler = function(){
 				switch (that.offset){
