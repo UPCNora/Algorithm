@@ -176,6 +176,8 @@ var algorithm = {
 
 var handler = {
 		domX : document.querySelectorAll('#mainbody ul li'),
+		this.domB = domX[0],
+		this.domC = domX[139],
 		domD : [],
 		offset : 0,
 		btnArr : document.querySelectorAll('button'),
