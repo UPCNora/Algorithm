@@ -43,10 +43,16 @@ table {
 	border-spacing: 0;
 }
 
-/* zhuti */
+/* main */
+body{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: '微软雅黑';
+	overflow: auto;
+}
 #mainbody{
-	width: 700px;
-	height: 500px;
+	width: 1000px;
+	height: 760px;
 	margin: 0 auto;
 }
 #mainbody li{
@@ -54,4 +60,75 @@ table {
 	width: 48px;
 	float: left;
 	height: 48px;
+}
+h1{
+	font-size: 28px;
+	margin: 20px;
+	text-align: center;
+}
+
+.btn{
+	width: 1000px;
+	margin: 0 auto 20px;
+	height: 50px;
+}
+.btn .button{
+	float: left;
+	width: 100px;
+	height: 38px;
+	color: white;
+	border-color: #2daebf;
+	margin:10px 10px 0 0;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 38px;
+	cursor: pointer;
+
+	animation-name: bluePulse;
+	-webkit-animation-name: bluePulse;
+	-moz-animation-name: bluePulse;
+	-o-animation-name: bluePulse;
+	-ms-animation-name: bluePulse;
+	animation-duration: 2s;
+  	-webkit-animation-duration: 2s;
+  	-moz-animation-duration: 2s;
+  	-o-animation-duration: 2s;
+  	-ms-animation-duration: 2s;
+  	animation-iteration-count: infinite;
+  	-webkit-animation-iteration-count: infinite;
+  	-moz-animation-iteration-count: infinite;
+  	-o-animation-iteration-count: infinite;
+  	-ms-animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+/* css3 定制 */
+@keyframes bluePulse {
+  from { background-color: #007d9a; box-shadow: 0 0 2px #007d9a; }
+  50% { background-color: #2daebf; box-shadow: 0 0 8px #2daebf; }
+  to { background-color: #007d9a; box-shadow: 0 0 2px #007d9a; }
+}
+@-webkit-keyframes bluePulse {
+  from { background-color: #007d9a; -webkit-box-shadow: 0 0 2px #007d9a; }
+  50% { background-color: #2daebf; -webkit-box-shadow: 0 0 8px #2daebf; }
+  to { background-color: #007d9a; -webkit-box-shadow: 0 0 8px #007d9a; }
+}
+@-moz-keyframes bluePulse {
+  from { background-color: #007d9a; -moz-box-shadow: 0 0 2px #007d9a; }
+  50% { background-color: #2daebf; -moz-box-shadow: 0 0 8px #2daebf; }
+  to { background-color: #007d9a; -moz-box-shadow: 0 0 2px #007d9a; }
+}
+@-ms-keyframes bluePulse {
+  from { background-color: #007d9a; -ms-box-shadow: 0 0 2px #007d9a; }
+  50% { background-color: #2daebf; -ms-box-shadow: 0 0 8px #2daebf; }
+  to { background-color: #007d9a; -ms-box-shadow: 0 0 2px #007d9a; }
+}
+@-o-keyframes bluePulse {
+  from { background-color: #007d9a; -o-box-shadow: 0 0 2px #007d9a; }
+  50% { background-color: #2daebf; -o-box-shadow: 0 0 8px #2daebf; }
+  to { background-color: #007d9a; -o-box-shadow: 0 0 2px #007d9a; }
 }
