@@ -85,6 +85,9 @@
 		doAlgorthm = function(){
 			
 			this.openArr.push(this.start);
+			this.start.F = 0;
+			this.start.G = 0;
+			this.start.H = magnitude(this.start.position[0],)
 
 			do{
 				// openArr 排序 选择F最小的点作为当前点 this.cur
@@ -111,7 +114,10 @@
 						if(that.openArr.every(function(item3){
 							return item3 !== item;
 						})){
-							item.G = that.
+							item.G = magnitude(item.position[0],that.start.position[0]) + magnitude(item.position[1],that.start.position[1]);
+							item.H = magnitude(item.position[0],that.end.position[0]) + magnitude(item.position[1],that.end.position[1]);
+
+							item.F 
 						}
 					}
 				})
@@ -122,7 +128,18 @@
 		// 找回路径
 		findWay : function(){
 
-		}
+		},
+
+		// 相减并求绝对值
+		magnitude : function(num1,num2){
+			if(num1 - num2 > 0){
+				return num1 - num2;
+			}else if(num1 - num2 < 0){
+				return num2 - num1;
+			}else{
+				return 0;
+			}
+		},
 
 		// 启动算法 决定顺序呢
 		init : function(domA,domB,domWallArr){
