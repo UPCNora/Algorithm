@@ -155,7 +155,6 @@
 				do{
 					this.pathArr.push(wayPath.index);
 					wayPath = wayPath.parentLi;
-					console.log(wayPath.index + ':' + wayPath.position);
 				}while(wayPath !== this.start && this.openArr.length > 0);
 				this.pathArr.push(this.start.index);
 					console.log(this.start.index + ':' + this.start.position);
@@ -325,11 +324,6 @@
 					});
 				}else if( i === 3){
 					this.btnArr[i].addEventListener('click',function(){
-						console.log(Algorithm.allLiArr);
-						Algorithm.allLiArr.forEach(function(item,index){
-							console.log(1);
-							this.liDom[index].innerHTML = item.F;
-						}.bind(this));
 						this.startInit();
 					}.bind(this));
 				}else if( i === 4){
