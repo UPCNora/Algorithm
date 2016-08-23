@@ -100,7 +100,18 @@ h1{
   	-o-animation-iteration-count: infinite;
   	-ms-animation-iteration-count: infinite;
 }
-
+.startcss{
+	background: green;
+}
+.endcss{
+	background: red;
+}
+.wallcss{
+	background: yellow;
+}
+.pathcss{
+	background: blue;
+}
 
 
 
